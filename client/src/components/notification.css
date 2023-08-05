@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Emoji";
+    scroll-behavior: smooth;
+    font-family: "Segoe UI Emoji";
+    /* src: url(path/to/your/font.woff2) format("woff2"); */
+  }
+  
+  .sec1 {
+    height: 60%;
+  }
+
+.background91{
+    background-size: 10%;
+    background-color: rgb(216, 229, 240);
+    opacity: 0.89;
+}
+
+.homebutton {
+    right: 0px;
+    width: 110px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    z-index: 2;}
+	
+.homebutton a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.3em 1.25em;
+    border: 1px solid #c2c7cc;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.667em;
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    background: #fff;
+    transition: color,border-color ease 0.3s;
+    border-radius: 2em;
+}
+.homebutton a:hover {
+    border-color: #42B6F3;
+    color: #42B6F3;
+    text-decoration: none;
+}
+
+  
+ 
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap);
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #161717;
+    min-height: 100vh;
+    position: relative;
+}
+
+.section-50 {
+    padding: 5rem 0;
+}
+
+.m-b-50 {
+    margin-bottom: 5rem;
+}
+
+.dark-link {
+    color: #333;
+}
+
+.heading-line {
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.heading-line:after {
+    content: "";
+    height: .4rem;
+    width: 7.5rem;
+    background-color: #29B6F6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.notification-ui_dd-content {
+    margin-bottom: 3rem;
+}
+
+.notification-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem;
+    margin-bottom: .7rem;
+    background: #fff;
+    -webkit-box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.06);
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.06);
+}
+
+.notification-list--unread {
+    border-left: .2rem solid #29B6F6;
+}
+
+.notification-list .notification-list_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.notification-list .notification-list_content .notification-list_img img {
+    height: 4.8rem;
+    width: 4.8rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+}
+
+.notification-list .notification-list_content .notification-list_detail p {
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.notification-list .notification-list_feature-img img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: .5rem;
+    margin-left: 2rem;
+}

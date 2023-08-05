@@ -1,0 +1,976 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+}
+
+.sec1 {
+  height: 60%;
+}
+
+
+.button{
+color: #000;
+z-index: 3;
+}
+
+.home-icon{
+position: fixed;
+top: 2rem;
+right: 2rem;
+width: 4rem;
+height: 4rem;
+cursor: pointer;
+}
+
+
+
+
+
+.background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-text {
+  font-family: Garamond;
+  font-size: 10rem;
+  color: white;
+  text-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.5);
+  
+}
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+ /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.0s steps(20, end),
+    blink-caret .35s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(0, 0, 0); }
+}
+:root{
+  --color-tan: #035B96;
+  --color-teal: #6497B1;
+  --color-brown: #B3CDE0;
+  --color-orange: #04396C;
+  --color-gold: #031F4B;
+}
+.H111{
+  margin: auto;
+  font-family: Georgia, serif;
+  font-size: 20rem;
+  color: rgb(255, 255, 255);
+  text-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.5);
+  margin-top: -3rem;
+}
+
+
+#containeraa{
+  text-align: center;
+  justify-content: center;
+  background: #d7e4ee;
+  position: relative;
+  height: 55rem ;
+  width: 100%;
+  margin: 0rem  auto;
+  padding: 0rem auto;
+overflow: hidden;
+z-index: -6;
+}
+
+#containeraa-inside {
+  position: relative;
+  min-width: 90rem;
+  max-width: 128rem;
+  height: auto;
+  min-height: 100%;
+  margin: 0rem auto;
+  padding: 0rem auto;
+  overflow: visible;
+}
+
+#containeraa-inside h1{
+font-size: 9em;
+margin-right: auto;
+margin-left: auto;
+color: black;
+padding-top: 20rem;
+
+}
+
+#circle-small {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+animation-delay: 0s;
+position: absolute;
+top: 15rem;
+left: -5rem;
+  background: var(--color-gold);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  opacity: 1;
+z-index:-1;
+}
+
+#circle-small img{
+width: 30rem;
+height: 30rem;
+-webkit-animation: none; 
+animation: none;
+animation-timing-function: none;
+
+}
+
+#circle-medium {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+animation-delay: 0.3s;
+position: absolute;
+top: 0rem;
+left: -20rem;
+  background: var(--color-orange);
+  width: 60rem;
+  height: 60rem;
+  border-radius: 50%;
+  opacity: 1;
+z-index:-2;
+}
+
+#circle-large {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+animation-delay: 0.6s;
+position: absolute;
+top: -15rem;
+left: -35rem;
+  background: var(--color-tan);
+  width: 90rem;
+  height: 90rem;
+  border-radius: 50%;
+  opacity: 1;
+z-index:-3;
+}
+
+#circle-xlarge {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+animation-delay: 0.9s;
+position: absolute;
+top: -30rem;
+left: -50rem;
+  background: var(--color-teal);
+  width: 120rem;
+  height: 120rem;
+  border-radius: 50%;
+  opacity: 1;
+  z-index:-4;
+}
+
+#circle-xxlarge {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+animation-delay: 1.2s;
+position: absolute;
+top: -45rem;
+left: -65rem;
+  background: var(--color-brown);
+  width: 150rem;
+  height: 150rem;
+  border-radius: 50%;
+  opacity: 1;
+  z-index:-5;
+}
+
+@-webkit-keyframes circle-small-scale {
+  0% {
+      -webkit-transform: scale(1.0);
+  }
+}
+
+
+@keyframes circle-small-scale {
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+position: relative;
+}
+
+
+
+
+
+
+
+
+.section6{
+ background-color: rgb(246, 249, 252);
+  opacity: 1;
+  height: 109.6rem;
+}
+
+.containeraa {
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: rem;
+  height: 100vh;
+  width: 100vw;
+  max-height: 80rem;
+  max-width: 128rem;
+  min-height: 60rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.borderaa {
+  height: 39rem;
+  width: 29rem;
+  background: transparent;
+  border-radius: 1rem;
+  transition: border 1s;
+  position: relative;
+
+}
+.borderaa:hover {
+  border: .1rem solid #fff;
+}
+.cardaa {
+  margin-bottom: 10rem;
+  height: 40rem;
+  width: 30rem;
+  background: #808080;
+  border-radius: 1rem;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: rgba(0, 0, 0, 0.3) 0rem 1.9rem 3.8rem, rgba(0, 0, 0, 0.22) 0rem 1.5rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.card0 {
+  background: url("../components/images/AKSHITA.jpg") center center no-repeat;
+  background-size: 30rem;
+}
+.card0:hover {
+  background: url("../components/images/AKSHITA.jpg") Center top no-repeat ;
+  background-size: 60rem;
+}
+.card0:hover h2 {
+  opacity: 1;
+}
+.card0:hover .fa {
+  opacity: 1;
+}
+.card1 {
+  background: url("../components/images/drvya.jpg")center center no-repeat;
+  background-size: 30rem;
+}
+.card1:hover {
+  background: url("../components/images/drvya.jpg")  center  no-repeat;
+  background-size: 60rem;
+}
+.card1:hover h2{
+  opacity: 1;
+}
+.card1:hover h6{
+  opacity: 1;
+}
+.card1:hover .fa {
+  opacity: 1;
+}
+.card2 {
+  background: url("../components/images/akshi.jpg") center center no-repeat;
+  background-size: 30rem;
+}
+.card2:hover {
+  background: url("../components/images/akshi.jpg")  center   no-repeat;
+  background-size: 60rem;
+}
+.card2:hover h2 {
+  opacity: 1;
+}
+.card2:hover .fa {
+  opacity: 1;
+}
+.card3 {
+  background: url("../components/images/dirghanshu.jpg") center center no-repeat;
+  background-size: 30rem;
+}
+.card3:hover {
+  background: url("../components/images/dirghanshu.jpg")  center bottom  no-repeat;
+  background-size: 60rem;
+}
+.card3:hover h2{
+  opacity: 1;
+}
+.card3:hover h6{
+  opacity: 1;
+}
+.card3:hover .fa {
+  opacity: 1;
+}
+.card4 {
+  background: url("../components/images/myk1.jpg") center center no-repeat;
+  background-size: 30rem;
+}
+.card4:hover {
+  background: url("../components/images/myk1.jpg")  center  no-repeat;
+  background-size: 60rem;
+}
+.card4:hover h2{
+  opacity: 1;
+}
+.card4:hover h6{
+  opacity: 1;
+}
+.card4:hover .fa {
+  opacity: 1;
+}
+.h2aa {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: rgb(255, 254, 254);
+  margin: 2rem;
+  font-size: 30px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.fa {
+  
+  transition: opacity 1s;
+}
+.icons {
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  fill: #fff;
+  color: rgb(255, 255, 255);
+  height: 15rem;
+  top: 22.6rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  transition: color 0.9s ease;
+}
+.icons i:hover{
+ color: #000;
+ transition: color 0.6s ease;
+}
+
+
+
+
+.specific-words::before {
+  content: "COO,SAFARNAMAAA";
+  display: inline;
+  font-size: 1.5rem;
+  padding-top: -2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.specific-words1::before {
+  content: "DIRECTOR,PERSONALISED EXPERIENCE";
+  display: inline;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.specific-words2::before {
+  content: "CEO,SAFARNAMAAA";
+  display: inline;
+  font-size: 1.5rem;
+  padding-top: -2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.specific-words3::before {
+  content: "MERN DEVLOPER";
+  display: inline;
+  font-size: 1.5rem;
+  padding-top: -2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.specific-words4::before {
+  content: "MERN DEVLOPER";
+  display: inline;
+  font-size: 1.5rem;
+  padding-top: -2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.sec109{
+  background: #000;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90rem;
+  margin: auto;
+  font-size: 2rem;
+  font-family: Cardo, serif;
+  text-align: JUSTIFY;
+}
+
+.ptag{
+
+  color: #ddd;
+  margin-top: 2.5rem;
+  line-height: 3rem;
+  word-spacing: 0.5rem;
+  letter-spacing: 0rem;
+}
+
+.ptag:first-child:first-letter {
+  font-size: 5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+ 
+.ptag:first-child:first-letter {
+  font-size: 5rem;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.headingofp{
+  font-size: 7rem;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 881px){
+  .section6{
+    height: 159.6rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+#containeraa {
+  height: 30rem;
+}
+.cardaa{
+  height: 40rem;
+  width: 32rem;
+}
+.icons{
+  height: 10rem;
+  top: 22.6rem;
+  width: 3rem;
+}
+.section6{
+  height: 169.6rem;
+}
+ 
+
+.borderaa{
+  height: 39rem;
+  width: 30rem;
+}
+.card0{
+  background-size: 30rem;
+}
+.card1{
+  background-size: 30rem;
+}
+.card2{
+  background-size: 30rem;
+}
+.card3{
+  background-size: 30rem;
+}
+.card4{
+  background-size: 30rem;
+}
+#containeraa {
+  height: 50rem;
+}
+
+#containeraa-inside h1 {
+  font-size: 6em;
+  padding-top: 10rem;
+}
+
+#circle-small {
+  top: 10rem;
+  left: -3rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+#circle-medium {
+  top: -5rem;
+  left: -15rem;
+  width: 40rem;
+  height: 40rem;
+}
+
+#circle-large {
+  top: -10rem;
+  left: -25rem;
+  width: 60rem;
+  height: 60rem;
+}
+
+#circle-xlarge {
+  top: -20rem;
+  left: -35rem;
+  width: 80rem;
+  height: 80rem;
+}
+
+#circle-xxlarge {
+  top: -300rem;
+  left: -45rem;
+  width: 100rem;
+  height: 100rem;
+}
+}
+@media only screen and (max-width: 640px) {
+#containeraa {
+  height: 30rem;
+}
+.cardaa{
+  height: 35rem;
+  width: 27rem;
+}
+.icons{
+  height: 10rem;
+  top: 22.6rem;
+  width: 3rem;
+}
+.section6{
+  height: 159.6rem;
+}
+ 
+
+.borderaa{
+  height: 35rem;
+  width: 25rem;
+}
+.card0{
+  background-size: 25rem;
+}
+.card1{
+  background-size: 25rem;
+}
+.card2{
+  background-size: 25rem;
+}
+.card3{
+  background-size: 25rem;
+}
+.card4{
+  background-size: 25rem;
+}
+.cardaa{
+  margin-right: 13rem;
+}
+#containeraa {
+  height: 50rem;
+}
+
+#containeraa-inside h1 {
+  font-size: 6em;
+  padding-top: 22rem;
+}
+
+#circle-small {
+  top: 10rem;
+  left: -3rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+#circle-medium {
+  top: -5rem;
+  left: -15rem;
+  width: 40rem;
+  height: 40rem;
+}
+
+#circle-large {
+  top: -10rem;
+  left: -25rem;
+  width: 60rem;
+  height: 60rem;
+}
+
+#circle-xlarge {
+  top: -20rem;
+  left: -35rem;
+  width: 80rem;
+  height: 80rem;
+}
+
+#circle-xxlarge {
+  top: -300rem;
+  left: -45rem;
+  width: 100rem;
+  height: 100rem;
+}
+}
+@media only screen and (max-width: 580px) {
+.cardaa{
+  margin-right: 15rem;
+}
+.section6{
+  height: 229.6rem;
+}
+.team {
+ 
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.h2aa{
+  font-size: 20px;
+  margin: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+#containeraa-inside h1 {
+  font-size: 6em;
+  padding-top: 22rem;
+}
+
+}
+@media only screen and (max-width: 480px) {
+#containeraa {
+  height: 30rem;
+}
+
+#containeraa-inside h1 {
+  font-size: 6em;
+  padding-top: 20rem;
+}
+.cardaa{
+  height: 30rem;
+  width: 22rem;
+}
+.team {
+ 
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.icons{
+  height: 10rem;
+  top: 17.6rem;
+  width: 3rem;
+}
+.section6{
+  height: 209.6rem;
+}
+.containeraa {
+  max-height: 60rem;
+  max-width: 108rem;
+  min-height: 20rem;
+  
+  
+}
+
+.h111{
+  padding-top: 300px;
+
+}
+.borderaa{
+  height: 29rem;
+  width: 20rem;
+}
+.card0{
+  background-size: 20rem;
+}
+.card1{
+  background-size: 20rem;
+}
+.card2{
+  background-size: 20rem;
+}
+.card3{
+  background-size: 20rem;
+}
+.card4{
+  background-size: 20rem;
+}
+#containeraa-inside h1 {
+  font-size: 4em;
+  padding-top: 5rem;
+}
+
+#circle-small {
+  top: 5rem;
+  left: -2rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+#circle-medium {
+  top: -2.5rem;
+  left: -10rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+#circle-large {
+  top: -5rem;
+  left: -17rem;
+  width: 45rem;
+  height: 45rem;
+}
+
+#circle-xlarge {
+  top: -10rem;
+  left: -25rem;
+  width: 60rem;
+  height: 60rem;
+}
+
+#circle-xxlarge {
+  top: -15rem;
+  left: -32rem;
+  width: 75rem;
+  height: 75rem;
+}
+}@media only screen and (max-width: 390px) {
+  #containeraa {
+    height: 30rem;
+    
+  }
+  .team {
+   
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  
+  
+  #containeraa-inside h1{
+    padding-right: 350px ;
+  }
+  .cardaa{
+    height: 30rem;
+    width: 22rem;
+    margin-right: 10rem;
+  }
+  .icons{
+    height: 10rem;
+    top: 17.6rem;
+    width: 3rem;
+  }
+  .section6{
+    height: 209.6rem;
+  }
+  .containeraa {
+    max-height: 60rem;
+    max-width: 108rem;
+    min-height: 20rem;
+    min-width: 50rem;
+    
+  }
+  
+  .borderaa{
+    height: 29rem;
+    width: 20rem;
+  }
+  .card0{
+    background-size: 20rem;
+  }
+  .card1{
+    background-size: 20rem;
+  }
+  .card2{
+    background-size: 20rem;
+  }
+  .card3{
+    background-size: 20rem;
+  }
+  .card4{
+    background-size: 20rem;
+  }
+  #containeraa-inside h1 {
+    font-size: 6em;
+    padding-top: 12rem;
+    padding-left: 40px;
+  }
+  
+  #circle-small {
+    top: 5rem;
+    left: -2rem;
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  #circle-medium {
+    top: -2.5rem;
+    left: -10rem;
+    width: 30rem;
+    height: 30rem;
+  }
+  
+  #circle-large {
+    top: -5rem;
+    left: -17rem;
+    width: 45rem;
+    height: 45rem;
+  }
+  
+  #circle-xlarge {
+    top: -10rem;
+    left: -25rem;
+    width: 60rem;
+    height: 60rem;
+  }
+  
+  #circle-xxlarge {
+    top: -15rem;
+    left: -32rem;
+    width: 75rem;
+    height: 75rem;
+  }
+  }
+  
+@media only screen and (max-width: 300px){
+.cardaa{
+  margin-right: 14rem;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backArrow {
+  font-size: 25px;
+  line-height: 25px;
+
+  width: 1em;
+  height: 1em;
+  padding: 6px;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transform: rotate(180deg);
+
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  -webkit-touch-callout: none;
+   -khtml-user-select: none;
+}
+.backArrow:hover {
+  background: rgba(255,255,255,.5);
+}
+.backArrow:active {
+  position: relative;
+  right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

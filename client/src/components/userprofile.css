@@ -1,0 +1,17 @@
+.userp{
+    align-items: center;
+    display: inline;
+}
+
+.spacingforpost{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu{
+    top:35%;
+}
+.bg88{
+    /*background-image: url("../components/images/lbg.jpeg.jpg");*/
+    background-size: 10%;
+    background-color: rgb(216, 229, 240);
+  }

@@ -1,0 +1,618 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI Emoji";
+    scroll-behavior: smooth;
+    font-family: "Segoe UI Emoji";
+    /* src: url(path/to/your/font.woff2) format("woff2"); */
+  }
+
+  .sec1{
+    height: 60%;
+  }
+  .sec867{
+    background: rgb(245, 224, 176);
+  }
+ 
+
+
+
+  
+
+  .heading2{
+    color: rgb(12, 12, 12);
+    font-size: 5rem;
+    align-items: center;
+    margin-left: 25%;
+    font-weight: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background:rgb(245, 224, 176);
+  }
+
+
+
+.section{
+  background:rgb(255, 255, 255);
+  color: #000;
+}
+  
+
+.courses-container {
+  background-size: 10%;
+  background-color: rgb(216, 229, 240);
+
+      font-family: 'Muli',  sans-serif ;
+    font-family: "Segoe UI Emoji";
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+  }
+  
+  .course {
+      background-color: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 1.2rem 1.2rem rgba(0, 0, 0, 0.2);
+      display: flex;
+      max-width: 100%;
+      margin: 2rem;
+      overflow: hidden;
+      width: 100rem;
+  }
+  .h3{
+      text-transform: capitalize;
+  }
+  .course h6 {
+      opacity: 0.6;
+      margin: 0;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+  }
+  
+  .course h2 {
+      letter-spacing: .1rem;
+      margin: 1rem 0;
+      text-transform: uppercase;
+  }
+  
+  .course-preview {
+    background-color: #36516C;
+      color: #fff;
+      padding: 3rem;
+      max-width: 25rem;
+  }
+  
+  .course-preview a {
+      color: #fff;
+      display: inline-block;
+      font-size: 1.2rem;
+      opacity: 0.6;
+      text-decoration: none;
+  }
+  
+  .course-info {
+      padding: 3rem;
+      position: relative;
+      width: 100%;
+    font-family: "Segoe UI Emoji";
+  }
+  
+  .progress-container {
+      position: absolute;
+      top: 3rem;
+      right: 3rem;
+      text-align: right;
+      width: 15rem;
+  }
+  
+  .progress {
+      background-color: #ddd;
+      border-radius: .3rem;
+      height: .5rem;
+      width: 100%;
+  }
+  
+  .progress::after {
+      border-radius: .3rem;
+      background-color: #3d494c;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: .5rem;
+      width: 66%;
+  }
+  
+  .progress-text {
+      font-size: 1rem;
+      opacity: 0.6;
+      letter-spacing: .1rem;
+  }
+  
+  .btn111 {
+      background-color:#3d494c;
+      border: 0;
+      border-radius: 5rem;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+      color: #fff;
+      font-size: 1.6rem;
+      padding: 1.2rem 2.5rem;
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
+      letter-spacing: .1rem;
+  }
+  .img12{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:center;
+    top: 0rem;
+
+}
+
+
+
+.center .inputbox {
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0rem .5rem 1.5rem;
+    font-family: Arial, Helvetica, sans-serif ;
+    position: relative;
+    width: 30rem;
+    height: 2rem;
+    margin-bottom: 5rem;
+  }
+  .center .inputbox input {
+    font-family: 'Muli',  sans-serif ;
+    text-transform: capitalize;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: .1rem solid #000;
+    outline: none;
+    background: none;
+    padding: .9rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2em;
+  }
+  .center .inputbox:last-child {
+    margin-bottom: 0;
+  }
+  .center .inputbox span {
+    box-shadow: rgba(0, 0, 0, 0.05) 0rem .5rem 1.5rem;
+    position: absolute;
+    top: 1.4rem;
+    border: #000;
+    left: 2rem;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+  }
+  .center .inputbox input:focus ~ span,
+  .center .inputbox input:valid ~ span {
+    transform: translateX(-1.3rem) translateY(-3.5rem);
+    font-size: 1em;
+  }
+  .center .inputbox [type="button"] {
+    width: 50%;
+    background: dodgerblue;
+    color: rgb(112, 82, 82);
+    border: rgb(0, 0, 0);
+  }
+  .center .inputbox:hover [type="button"] {
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+  }
+  
+  
+
+  .datepicker {
+    border-radius: .5rem;
+    direction: ltr;
+    -webkit-user-selet: none;
+    -webkit-touch-callout: none;
+   
+  }
+  
+  
+  
+  .picker {
+    display: flex;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: .1rem solid lightgray;
+    padding : .4rem;
+  }
+  input {
+    border: .1rem;
+  }
+
+
+
+
+input {
+  box-shadow: rgba(0, 0, 0, 0.05) 0rem .5rem 1.5rem;
+  display: flex;
+  margin-bottom: .5rem;
+  margin-top: .5rem ;
+  border: .2rem black;
+}
+
+label {
+  display: flex;
+  margin-top: .9rem;
+  margin: 0 auto;
+}
+
+select {
+  border-radius: .4rem;
+}
+
+.lang{
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+ 
+}
+
+.input1{
+  width: 50rem;
+  box-shadow: rgba(235, 2, 2, 0.05) 0rem .5rem 1.5rem;
+}
+.fa{
+  font-weight: 1rem;
+}
+
+#rangeValue {
+  position: relative;
+  display: block;
+  
+  font-size: 2em;
+  color: #999;
+  font-weight: 400;
+}
+.range {
+  width: 40rem;
+  height: 1.5rem;
+  -webkit-appearance: none;
+  background: rgb(226, 201, 201);
+  outline: none;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: inset 0 0 .5rem rgb(254, 254, 254);
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #d4cec8;
+  cursor: pointer;
+  border: .4rem solid rgb(244, 77, 77);
+  box-shadow: -40.7rem 0 0 40rem #000000;
+}
+.stops{
+  margin-left: 0rem;
+}
+.stops input{
+  border: #000;
+  box-shadow: rgba(12, 12, 12, 0.05) 0rem .5rem 1.5rem;
+
+}
+.itnerary{
+    text-align: center;
+    display: flex;
+
+}
+
+.toast {
+  display: inline-block;
+  width: 20rem; 
+
+  border-radius: .4rem;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  margin-left: 1rem;
+
+}
+
+
+.redtoast {
+  background-color: red;
+  color: #fff;
+}
+
+.greentoast {
+  background-color: green;
+  color: #fff;
+}
+    
+.error{
+  color: red;
+}
+  
+  
+     
+        
+     
+  
+
+input[type="text"],
+select {
+  border: .1rem solid #ccc;
+  padding: .5rem;
+}
+
+
+/* Datepicker Container */
+.dateform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+
+/* Datepicker Label */
+.dateform label {
+
+    margin-left: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Datepicker Input */
+.dateform input {
+  padding: .8rem 1.2rem;
+  font-size: 1.4rem;
+  border: .1rem solid #ccc;
+  border-radius: .4rem;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.dateform input:focus {
+  border-color: #007bff;
+}
+
+/* Datepicker Error */
+.dateform .error {
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  color: #dc3545;
+}
+
+/* Datepicker Calendar Icon */
+.react-datepicker-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.react-datepicker-wrapper input {
+  cursor: pointer;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container input {
+  cursor: pointer;
+}
+
+/* Datepicker Calendar Container */
+.react-datepicker {
+  position: absolute;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  border-radius: .4rem;
+  background-color: #fff;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}
+
+/* Datepicker Calendar Header */
+.react-datepicker__header {
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-top-left-radius: .4rem;
+  border-top-right-radius: .4rem;
+}
+
+.react-datepicker__header .react-datepicker__current-month {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+/* Datepicker Calendar Days */
+.react-datepicker__day-names {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.react-datepicker__day-names div {
+  flex: 1;
+  text-align: center;
+  color: #999;
+}
+
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-datepicker__day {
+  flex: 1;
+  padding: 1.2rem;
+  text-align: center;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f0f0f0;
+}
+
+.react-datepicker__day--disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.react-datepicker__day--selected {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Datepicker Month Selector */
+.react-datepicker__month-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: .4rem;
+  border-bottom-right-radius: .4rem;
+}
+
+.react-datepicker__month-selector .react-datepicker__current-month {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.react-datepicker__month-prev,
+.react-datepicker__month-next {
+  cursor: pointer;
+}
+
+.react-datepicker__month-prev:hover,
+.react-datepicker__month-next:hover {
+  color: #fff;
+}
+
+.react-datepicker__month-prev--disabled,
+.react-datepicker__month-next--disabled {
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+
+
+
+/* Mobile and Tablet specific styles */
+@media (max-width: 768px) {
+  .heading2 {
+    font-size: 3rem;
+    margin-left: 10%;
+  }
+
+  .course {
+    flex-direction: column;
+    max-width: 100%;
+    width: 80%;
+  }
+
+  .course-preview {
+    max-width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .course-preview img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .course-info {
+    padding: 1.5rem;
+  }
+
+  .inputbox {
+    width: 90%;
+  }
+
+  .datepicker {
+    width: 90%;
+  }
+
+  .picker {
+    width: 90%;
+  }
+
+  .range {
+    width: 90%;
+  }
+
+  .btn111 {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Mobile specific styles */
+@media (max-width: 480px) {
+  .heading2 {
+    font-size: 2.5rem;
+    margin-left: 5%;
+  }
+
+  .course {
+    width: 90%;
+  }
+
+  .course-preview {
+    padding: 1rem;
+  }
+
+  .course-info {
+    padding: 1rem;
+  }
+
+  .inputbox {
+    width: 100%;
+  }
+
+  .datepicker {
+    width: 100%;
+  }
+
+  .picker {
+    width: 100%;
+  }
+
+  .range {
+    width: 100%;
+  }
+
+  .btn111 {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .img12 {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+
+
