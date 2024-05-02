@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000;
 // CORS policy 
 app.use(cors({
   origin: [
-    "https://safarnamaaa.vercel.app",
+    "https://safarnamaaa-frontend.vercel.app",
     "http://localhost:3000",
   ], 
   methods: ["GET", "POST", "PUT", "DELETE"],
