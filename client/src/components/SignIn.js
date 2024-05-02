@@ -39,7 +39,7 @@ const Signin = () => {
       toast.error('Enter Valid Email!!');
       return;
     }
-    fetch('/signup', {
+    fetch('https://safarnamaaa-backend.vercel.app/signup', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const Signin = () => {
   };
   
   const GetData = () => {
-    fetch('/signin', {
+    fetch('https://safarnamaaa-backend.vercel.app/signin', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json',

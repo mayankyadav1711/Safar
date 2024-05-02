@@ -24,7 +24,7 @@ const Reset = () =>{
               toast.error('Enter Valid Email!!');
               return 
             }
-            fetch("/reset-password",{
+            fetch("https://safarnamaaa-backend.vercel.app/reset-password",{
                 method:"post",
                 headers:{
                     "Content-Type":"application/json"

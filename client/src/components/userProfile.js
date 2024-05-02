@@ -14,7 +14,7 @@ const UserProfile=()=>{
   console.log(userid)
 
   useEffect(() => {
-    fetch(`/userProfile/${userid}`, {
+    fetch(`https://safarnamaaa-backend.vercel.app/userProfile/${userid}`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },

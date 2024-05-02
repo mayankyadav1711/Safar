@@ -10,7 +10,7 @@ const Notification = () => {
   const { state } = useContext(UserContext);
 
   useEffect(() => {
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -23,7 +23,7 @@ const Notification = () => {
 
   useEffect(() => {
     // Fetch all notifications
-    fetch("/notifications", {
+    fetch("https://safarnamaaa-backend.vercel.app/notifications", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },

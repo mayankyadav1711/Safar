@@ -61,7 +61,7 @@ const Home = () => {
 
   useEffect(() => {
     // Fetch user profile details
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -77,7 +77,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    fetch("/allpost", {
+    fetch("https://safarnamaaa-backend.vercel.app/allpost", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -176,7 +176,7 @@ const Home = () => {
     };
 
     // Make the API call in the background
-    fetch("/sendemail", {
+    fetch("https://safarnamaaa-backend.vercel.app/sendemail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -190,7 +190,7 @@ const Home = () => {
       .then((result) => {
         console.log(result);
 
-        fetch("/notifications", {
+        fetch("https://safarnamaaa-backend.vercel.app/notifications", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -286,7 +286,7 @@ const Home = () => {
 
     // Make the API calls in the background
     Promise.all([
-      fetch(`/like`, {
+      fetch(`https://safarnamaaa-backend.vercel.app/like`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -296,7 +296,7 @@ const Home = () => {
           postId: id,
         }),
       }),
-      fetch(`/notifications`, {
+      fetch(`https://safarnamaaa-backend.vercel.app/notifications`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -352,7 +352,7 @@ const Home = () => {
     updatePostData(id, { ...updatedPosts[postIndex] });
     updateLikedPosts(id, false);
 
-    fetch(`/unlike`, {
+    fetch(`https://safarnamaaa-backend.vercel.app/unlike`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

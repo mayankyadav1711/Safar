@@ -19,7 +19,7 @@ const NewPass = () =>{
     const PostData = () =>{
 
        
-        fetch("/new-password",{
+        fetch("https://safarnamaaa-backend.vercel.app/new-password",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

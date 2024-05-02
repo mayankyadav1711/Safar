@@ -13,7 +13,7 @@ const ViewProfile = () => {
 
 
   useEffect(() => {
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -25,7 +25,7 @@ const ViewProfile = () => {
   }, []);
 
   useEffect(() => {
-    fetch('/likedPosts', {
+    fetch('https://safarnamaaa-backend.vercel.app/likedPosts', {
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('jwt')
       }
@@ -74,7 +74,7 @@ const ViewProfile = () => {
 
 
       useEffect(() => {
-        fetch("/mypost", {
+        fetch("https://safarnamaaa-backend.vercel.app/mypost", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("jwt"),
           },

@@ -17,7 +17,7 @@ const Contactus = () => {
 
   useEffect(() => {
     // Fetch user profile details
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -36,7 +36,7 @@ const Contactus = () => {
     e.preventDefault();
   
     // Send the form data to the server
-    fetch("/contact", {
+    fetch("https://safarnamaaa-backend.vercel.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

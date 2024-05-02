@@ -21,88 +21,86 @@ const transporter = nodemailer.createTransport({
     },
   });
 
-router.post('/signup',(req,res)=>{
-    const{name,email,password} = req.body
-    if(!email || !password || !name){
-         return  res.status(422).json({error:"Please add the fields."})
+  router.post('/signup', async (req, res) => {
+    const { name, email, password } = req.body;
+    if (!email || !password || !name) {
+        return res.status(422).json({ error: "Please add all the fields." });
     }
-    User.findOne({email:email})
-    .then((savedUser)=>{
-        if(savedUser){
-         return  res.status(422).json({error:"User already exists."})
+    try {
+        const savedUser = await User.findOne({ email: email });
+        if (savedUser) {
+            return res.status(422).json({ error: "User already exists." });
         }
-        bcrypt.hash(password,12)
-        .then(hashedpassword=>{
-                const user = new User({
-                    email,
-                    password:hashedpassword,
-                    name
-                })
-                user.save()
-                .then(user=>{
-                    transporter.sendMail({
-                        from: "hellosafarnamaaa@gmail.com",
-                        to: user.email,
-                        subject: "Welcome aboard Safarnamaaa!",
-                        html: `
-                          <h1>We are absolutely thrilled to have you join us at Safarnamaaa!</h1>
-                          <p>Get ready to embark on an incredible journey with us.</p>
-                          <p>Here's your pathway to proceed:</p>
-                          <ol>
-                            <li>Create your profile - it only takes 2 minutes!</li>
-                            <li>Explore and search for your desired travel destinations.</li>
-                            <li>Connect with your ideal travel companion using Connect+ and Instagram.</li>
-                            <li>You're all set to embark on unforgettable life experiences!</li>
-                          </ol>
-                          <p>We can't wait to see you explore the world and make amazing memories.</p>
-                          <p>So let’s start your Safar with Safarnamaaa and If you have any questions or need assistance, feel free to reach out to our team.</p>
-                          <p>Enjoy the journey!</p>
-                          <p>Best regards,</p>
-                          <p>[Safarnamaaa Team]</p>
-                        `,
-                      });
-                      
-                    res.json({message:"Saved Successfully."})
-                })
-                .catch(err=>{
-                    console.log(err)
-                })
-
-        })
-       
-    })
-    .catch(err=>{
-        console.log(err)
-    })
-})
-
-router.post('/signin', (req,res)=>{
-    const {email,password} = req.body
-    if(!email || !password){
-        return res.status(422).json({error:"Please provide both email and password"})
+        const hashedpassword = await bcrypt.hash(password, 12);
+        const user = new User({
+            email,
+            password: hashedpassword,
+            name
+        });
+        await user.save();
+        await sendWelcomeEmail(user.email);
+        res.json({ message: "Saved Successfully." });
+    } catch (error) {
+        console.error("Error during user registration:", error);
+        return res.status(500).json({ error: "An error occurred during user registration. Please try again later." });
     }
-    User.findOne({email:email})
-    .then(savedUser=>{
-        if(!savedUser){
-           return res.status(422).json({error:"Invalid email or password"})
+});
+
+// Function to send welcome email
+async function sendWelcomeEmail(email) {
+    try {
+        await transporter.sendMail({
+            from: "hellosafarnamaaa@gmail.com",
+            to: email,
+            subject: "Welcome aboard Safarnamaaa!",
+            html: `
+                <h1>We are absolutely thrilled to have you join us at Safarnamaaa!</h1>
+                <p>Get ready to embark on an incredible journey with us.</p>
+                <p>Here's your pathway to proceed:</p>
+                <ol>
+                    <li>Create your profile - it only takes 2 minutes!</li>
+                    <li>Explore and search for your desired travel destinations.</li>
+                    <li>Connect with your ideal travel companion using Connect+ and Instagram.</li>
+                    <li>You're all set to embark on unforgettable life experiences!</li>
+                </ol>
+                <p>We can't wait to see you explore the world and make amazing memories.</p>
+                <p>So let’s start your Safar with Safarnamaaa and If you have any questions or need assistance, feel free to reach out to our team.</p>
+                <p>Enjoy the journey!</p>
+                <p>Best regards,</p>
+                <p>[Safarnamaaa Team]</p>
+            `,
+        });
+    } catch (error) {
+        console.error("Error sending welcome email:", error);
+        throw error;
+    }
+}
+
+
+router.post('/signin', async (req, res) => {
+    const { email, password } = req.body;
+    if (!email || !password) {
+        return res.status(422).json({ error: "Please provide both email and password" });
+    }
+    try {
+        const savedUser = await User.findOne({ email: email });
+        if (!savedUser) {
+            return res.status(422).json({ error: "Invalid email or password" });
         }
-        bcrypt.compare(password,savedUser.password)
-        .then(doMatch=>{
-            if(doMatch){
-                // res.json({message:"Successful SignIn!!"})
-                const token = jwt.sign({_id:savedUser._id},JWT_SECRET)
-                const{_id,name,email} = savedUser
-                res.json({token,user:{_id,name,email}})
-            }
-            else{
-                return res.status(422).json({error:"Invalid email or password"})
-            }
-        })
-    })
-    .catch(err=>{
-        console.log(err)
-    })
-})
+        const doMatch = await bcrypt.compare(password, savedUser.password);
+        if (doMatch) {
+            const token = jwt.sign({ _id: savedUser._id }, JWT_SECRET);
+            const { _id, name, email } = savedUser;
+            return res.json({ token, user: { _id, name, email } });
+        } else {
+            return res.status(422).json({ error: "Invalid email or password" });
+        }
+    } catch (error) {
+        console.error("Error during user signin:", error);
+        return res.status(500).json({ error: "An error occurred during user signin. Please try again later." });
+    }
+});
+
 
 router.post('/reset-password', (req,res)=>{
 crypto.randomBytes(32,(err,buffer)=>{

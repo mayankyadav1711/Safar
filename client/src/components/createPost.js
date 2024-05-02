@@ -63,7 +63,7 @@ const CreatePost = () => {
 
   useEffect(() => {
     // Fetch user profile details
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },
@@ -175,7 +175,7 @@ const CreatePost = () => {
 
 
 
-    fetch("/createpost", {
+    fetch("https://safarnamaaa-backend.vercel.app/createpost", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

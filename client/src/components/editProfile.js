@@ -37,7 +37,7 @@ const EditProfile = () => {
   const [instahandleError, setInstahandleError] = useState(false);
 
   useEffect(() => {
-    fetch("/myprofile", {
+    fetch("https://safarnamaaa-backend.vercel.app/myprofile", {
       method: "GET",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
@@ -174,7 +174,7 @@ const EditProfile = () => {
         localStorage.setItem("profileImageUrl", imageUrl);
 
         setImageUrl(imageUrl);
-        fetch("/editprofile", {
+        fetch("https://safarnamaaa-backend.vercel.app/editprofile", {
           method: "post",
           headers: {
             "Content-Type": "application/json",
